@@ -4,11 +4,11 @@ namespace Test.Library
 {
 
 
-    public class ExampleTest
+    public class TestAttack
     {
 
         [Test]
-        public void dummyTest()
+        public void Test1()
         {
             Assert.True(true);
         }
