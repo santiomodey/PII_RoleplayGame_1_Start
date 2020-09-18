@@ -30,7 +30,7 @@ namespace Test.Library
              Assert.AreEqual(elf.Name,"Elf");
 
         }
-        //Comprueba que la vida no baja de 0
+        //Comprueba que la vida no baja de 0, debido a que no existe vida negativa ya que con 0 ya estarĂ­a muerto.
         [Test]
         public void Test3()
         {
@@ -40,7 +40,7 @@ namespace Test.Library
              Assert.AreEqual(elf.Health,0);
 
         }
-        //Lo atacan y lo recupera la vida
+        //Lo atacan y le recupera la vida
          [Test]
         public void Test4()
         {
