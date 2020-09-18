@@ -1,0 +1,79 @@
+using System;
+
+namespace Library
+{
+    public class Dwarf
+    {
+        private string name;
+        private int health;
+        private int attack;
+        public string Name {get;set;}
+        public int Health {get;set;}
+        public int Attack {get;set;}
+
+
+        public Dwarf(string name)
+        {
+            this.Name=name;
+            this.health=100;
+            this.attack=50;
+            this.Health=health;
+            this.Attack=attack;
+        
+        }
+
+        public void ObtainGuante(Guante Arma)
+        {
+            if (Arma.Attack > 0 )
+            {
+                this.Attack+=Arma.Attack;
+            }
+            if (Arma.Defense > 0 )
+            {
+                this.Health+=Arma.Defense;
+            }
+        }
+        public string AttackOther(Dwarf Cualquiera)
+        {
+            Cualquiera.Health-=this.Attack;
+            if (Cualquiera.Health<0)
+            {
+                Cualquiera.Health=0;
+                return $"{Cualquiera.Name} is dead";
+            }
+            else 
+            {
+                return $"{Cualquiera.Name}'s Health is: {Cualquiera.Health}";
+            }
+        }
+        
+    }
+}
+
+using System;
+
+namespace Library
+{
+    public class Guante
+    {
+        private string name;
+        private int defense;
+        private int attack;
+        
+        public string Name {get;set;}
+        public int Defense {get;set;}
+        public int Attack {get;set;}
+
+
+        public Guante(string name)
+        {
+            this.Name = name;
+            this.defense=40;
+            this.attack=0;
+            this.Defense=defense;
+            this.Attack=attack;
+            
+        }
+        
+    }
+}
