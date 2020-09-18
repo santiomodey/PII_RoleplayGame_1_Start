@@ -70,7 +70,16 @@ namespace Library
             {
                 return $"{this.Name}'s Health is: {this.Health}";
             }
-
         }
+
+        public void Curar()
+        {
+            if (this.Health<100)
+            {
+                this.Health=100;
+            }
+        }
+
+        
     }
 }
