@@ -12,8 +12,8 @@ namespace Library
         public BlueGem(string name)
         {
             this.Name = name;
-            this.Defense=40;
-            this.Attack=0;
+            this.Defense=0;
+            this.Attack=30;
         }
         
     }
