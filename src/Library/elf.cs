@@ -3,7 +3,11 @@ using System;
 namespace Library
 {
     /// <summary>
-    /// Se crear las variables de instancia como privadas por encapsulacion 
+    ///Se mantiene la encapsulacion porque los objetos usan su propia información para cumplir con las responsabilidades. 
+	//Esto mantiene el acoplamiento bajo, lo que produce programas más robustos y fáciles de mantener. 
+	//El comportamiento se distribuye a través de clase que tienen la información requerida, 
+	//promoviendo definiciones de clases más cohesivas que son más fáciles de entender y de mantener.
+	//En esta clase se cumple el patrón de Expert debido a que la clase Elf tiene la información necesaria para poder crear objetos Elf. 
     /// </summary>
     public class Elf
     {
